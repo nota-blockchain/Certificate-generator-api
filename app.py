@@ -8,9 +8,6 @@ import sys
 from jinja2 import Template
 from urlparse import urljoin
 
-
-# Functions ###################################################################
-
 def main():
     if len(sys.argv) != 4:
         print u'Usage: {file} <template.svg> <students_list.csv> <base_url>'.format(file=__file__)
