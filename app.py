@@ -9,9 +9,6 @@ from jinja2 import Template
 from urlparse import urljoin
 
 def main():
-    if len(sys.argv) != 4:
-        print u'Usage: {file} <template.svg> <students_list.csv> <base_url>'.format(file=__file__)
-        return 1
     
     template_file = sys.argv[1]
     students_list_file = sys.argv[2]
@@ -60,7 +57,6 @@ def img2dataurl(img):
     return img_dataurl
 
 def img_white2transparent(img):
-    # http://stackoverflow.com/a/765774/1265417
     img = img.convert("RGBA")
     datas = img.getdata()
     new_data = []
