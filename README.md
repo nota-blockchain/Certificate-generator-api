@@ -6,17 +6,16 @@ Usage
 -----
 
 ### Students data file
-
-Create a text file, `students_list.csv`, with the students data to display in the certificates. One line per student, each line generates a different certificate:
+`students_list.csv` 형식
 
 ```
 a;홍길동;6월 29일,2019년;한국****진흥원
 b;아무개;6월 30일,2019년,한국**진흥원
 ...
-```
+
 
 ### PDF 생성
-$ python ./certificate-generator/generate-certificates.py <template.svg> <students_list.csv> <base_url>
+$ python app.py <template.svg> <students_list.csv> <base_url>
 
 
 ### File description:
